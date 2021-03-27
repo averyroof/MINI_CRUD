@@ -14,7 +14,7 @@ export default class StorageService {
         if (sz < this.mas.size) {
             console.log('-- Новый элемент добавлен: --');
         } else {
-            console.log('-- Неудалось добавить элемент --');
+            console.log('-- Не удалось добавить элемент --');
         }
     }
 
@@ -44,7 +44,7 @@ export default class StorageService {
             this.mas.delete(id);
             console.log('-- Элемент удален --');
         } else {
-            console.log('-- Неудалось удалить элемент --');
+            console.log('-- Не удалось удалить элемент --');
         }
     }
 
@@ -58,7 +58,7 @@ export default class StorageService {
                 return;
             }
         }
-        console.log('-- Неудалось обновить значение элемента --');
+        console.log('-- Не удалось обновить значение элемента --');
     }
 
     replaceById(key, newValue) {
@@ -66,7 +66,7 @@ export default class StorageService {
             this.mas.set(key, newValue);
             console.log('-- Значение элемента с индексом ', key, ' заменено : ', this.mas.get(key));
         } else {
-            console.log('-- Неудалось заменить элемент --');
+            console.log('-- Не удалось заменить элемент --');
         }
     }
 }
